@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Notes</title>
+</head>
+<body>
+	<style>
+		body {
+			background: #191919;
+			display: flex;
+			gap: 20px;
+			justify-content: center;
+			margin-top: 170px
+		}
+
+		.note {
+			position: relative;
+			width: 50px;
+			height: 40px;
+			background: #FE5F55;
+			border-radius: 50%;
+		}
+
+		.a {
+			margin-left: -30px;
+		}
+
+		.c {
+			background: #A64942;
+		}
+		
+		.up {
+			position: absolute;
+			width: 10px;
+			height: 100px;
+			background: inherit;
+			bottom: 50%;
+			right: 0;
+		}
+
+		.side {
+			background: inherit;
+			position: absolute;
+			top: -80px;
+			right: -60%;
+			height: 10px;
+			width: 40px;
+		}
+
+		.long {
+			width: 60px;
+			right: -120%;
+		}
+
+		.down {
+			top: -60px;
+			
+		}
+	</style>
+
+	<div class="note a">
+		<div class="up"></div>
+		<div class="side long"></div>
+	</div>
+	<div class="note b">
+		<div class="up"></div>
+	</div>
+	<div class="note c">
+		<div class="up"></div>
+		<div class="side"></div>
+	</div>
+	<div class="note d">
+		<div class="up"></div>
+		<div class="side"></div>
+		<div class="side down"></div>
+	</div>
+
+</body>
+</html>
